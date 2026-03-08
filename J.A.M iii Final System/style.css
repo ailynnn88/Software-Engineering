@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            background-image: url(image/bg.jpg);
+        }
+        .navbar {
+            background-position: 0%;
+            padding: 25px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color:black;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #25705a; /* Hover color */
+        }
+
+        .nav-links a:active {
+            color: #ff6600; /* Color when clicked */
+        }
+
+
+
+.boarding-house-info {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.boarding-house-info h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.boarding-house-item {
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boarding-house-item h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.boarding-house-image {
+    flex: 1 1 calc(25% - 10px); /* 4 images per row */
+    max-width: calc(25% - 10px);
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.boarding-house-item p {
+    font-size: 16px;
+    color: #444;
+    margin: 6px 0;
+}
+
+.more-button {
+    background-color: #25705a;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #25705a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .boarding-house-image {
+        flex: 1 1 calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .boarding-house-info {
+        padding: 20px;
+    }
+
+    .boarding-house-image {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: 150px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .boarding-house-image {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 150px;
+    }
+}
+
+.login-section {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.login-section label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.login-section input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-section .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #25705a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-section .login-button:hover {
+    background-color: #25705a;
+    
+}
+.login-section .login-button:hover {
+    background-color: beige;
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
+        .navbar h2 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .back-btn {
+            margin-right: auto;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .form-container {
+            background: #fff;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table-container {
+            width: 65%;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #218838;
+            color: white;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+} 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BH Finder - Map</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url(image/bg.jpg);
+
+        }
+
+        .navbar {
+            background-position: 0%;
+            padding: 25px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color:black;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #25705a; /* Hover color */
+        }
+
+        .nav-links a:active {
+            color: #ff6600; /* Color when clicked */
+        }
+        .map-container {
+            width: 100%;
+            height: calc(100vh - 60px);
+            max-width: 100vw;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="map.html" class="active">Map</a></li>
+            <li><a href="#boarding-house">Boarding House Information</a></li>
+            <li><a href="admin_dashboard.php">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Map Container -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/d/embed?mid=1UxmvLbxEFHaAYdNb-zFYRyLgMMMjhyY&ehbc=2E312F" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</body>
+</html>
